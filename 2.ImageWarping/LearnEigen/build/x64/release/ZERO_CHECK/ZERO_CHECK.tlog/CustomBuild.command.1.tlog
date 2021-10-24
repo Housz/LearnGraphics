@@ -1,0 +1,10 @@
+^D:\PROJECTS\LEARNGRAPHICS\LEARNGRAPHICS\2.IMAGEWARPING\LEARNEIGEN\BUILD\CMAKEFILES\22BDCC0918C172C24580A9C5E6B8EDDE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/LearnGraphics/LearnGraphics/2.ImageWarping/LearnEigen -BD:/Projects/LearnGraphics/LearnGraphics/2.ImageWarping/LearnEigen/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/LearnGraphics/LearnGraphics/2.ImageWarping/LearnEigen/build/hello_eigen.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

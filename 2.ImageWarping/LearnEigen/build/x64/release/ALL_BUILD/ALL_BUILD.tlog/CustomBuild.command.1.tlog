@@ -1,0 +1,10 @@
+^D:\PROJECTS\LEARNGRAPHICS\LEARNGRAPHICS\2.IMAGEWARPING\LEARNEIGEN\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/LearnGraphics/LearnGraphics/2.ImageWarping/LearnEigen -BD:/Projects/LearnGraphics/LearnGraphics/2.ImageWarping/LearnEigen/build --check-stamp-file D:/Projects/LearnGraphics/LearnGraphics/2.ImageWarping/LearnEigen/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
